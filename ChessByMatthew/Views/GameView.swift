@@ -15,6 +15,9 @@ struct GameView: View {
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width - 10, height: UIScreen.main.bounds.width - 10, alignment: .center)
             
+            
+            PiecesUponBoardView()
+            
         }
     }
 }
