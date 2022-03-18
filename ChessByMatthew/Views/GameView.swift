@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GameView.swift
 //  ChessByMatthew
 //
 //  Created by Matthew Popov on 18.03.2022.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameView: View {
     var body: some View {
-        GameView()
+        Text("Hello, World!")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GameView()
     }
 }
