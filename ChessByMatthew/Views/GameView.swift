@@ -9,7 +9,13 @@ import SwiftUI
 
 struct GameView: View {
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            
+            Image("board")
+                .resizable()
+                .frame(width: UIScreen.main.bounds.width - 10, height: UIScreen.main.bounds.width - 10, alignment: .center)
+            
+        }
     }
 }
 
