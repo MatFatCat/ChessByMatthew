@@ -39,7 +39,7 @@ class Game {
                 
                 Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
                 
-                Queen(image: isSideWhite == true ? "w-king" : "b-king", side: side),
+                Queen(image: isSideWhite == true ? "w-queen" : "b-queen", side: side),
                 
                 King(image: isSideWhite == true ? "w-king" : "b-king", side: side),
                 
@@ -60,7 +60,7 @@ class Game {
                 
                 Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
                 
-                Queen(image: isSideWhite == true ? "w-king" : "b-king", side: side),
+                Queen(image: isSideWhite == true ? "w-queen" : "b-queen", side: side),
                 
                 King(image: isSideWhite == true ? "w-king" : "b-king", side: side),
                 

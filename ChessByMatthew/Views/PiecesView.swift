@@ -12,14 +12,14 @@ struct PiecesView: View {
     
     
     let columns = [
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
-        GridItem(.fixed(UIScreen.main.bounds.width*0.085))
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.0929))
     ]
     
     var whitePieces = Game.getPieces(side: .white)
@@ -29,7 +29,7 @@ struct PiecesView: View {
         
         VStack {
             
-            Spacer(minLength: UIScreen.main.bounds.height*0.2)
+            Spacer() //minLength: UIScreen.main.bounds.height*0.2
             
             
             LazyVGrid(columns: self.columns) {
@@ -38,12 +38,10 @@ struct PiecesView: View {
                 }
             }
             
-            //Spacer(minLength: UIScreen.main.bounds.height*0.05)
             
             Text("")
-                .frame(width: UIScreen.main.bounds.height*0.18, height: UIScreen.main.bounds.height*0.19, alignment: .center)
+                .frame(width: UIScreen.main.bounds.height*0.27, height: UIScreen.main.bounds.height*0.27, alignment: .center)
                 .hidden()
-            
             
             
             LazyVGrid(columns: self.columns) {
@@ -52,7 +50,7 @@ struct PiecesView: View {
                 }
             }
             
-            Spacer(minLength: UIScreen.main.bounds.height*0.2)
+            Spacer() //minLength: UIScreen.main.bounds.height*0.2
         }
     }
 }
