@@ -8,15 +8,13 @@
 import Foundation
 
 
-class ChessPiece {
+class ChessPiece: Identifiable {
     
     var image: String
-    var startPosition: String
     var side: Side
     
-    init(image: String, startPosition: String, side: Side) {
+    init(image: String, side: Side) {
         self.image = image
-        self.startPosition = startPosition
         self.side = side
     }
 
@@ -24,7 +22,6 @@ class ChessPiece {
 
 
 enum Side: String {
-    
     case black = "black"
     case white = "white"
 }

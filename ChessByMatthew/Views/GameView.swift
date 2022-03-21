@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct GameView: View {
+    
+
+    
     var body: some View {
         ZStack {
             
@@ -16,12 +19,12 @@ struct GameView: View {
                 .frame(width: UIScreen.main.bounds.width - 10, height: UIScreen.main.bounds.width - 10, alignment: .center)
             
             
-            PiecesUponBoardView()
+                PiecesView()
             
         }
     }
 }
-
+        
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
         GameView()
