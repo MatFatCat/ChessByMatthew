@@ -21,27 +21,65 @@ class Game {
         
         let isSideWhite: Bool = side == .white
         
-        return [
-            King(image: isSideWhite == true ? "w-king" : "b-king", side: side),
-            Queen(image: isSideWhite == true ? "w-king" : "b-king", side: side),
+        if isSideWhite == true {
+            return [
+                
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                
+                Rook(image: isSideWhite == true ? "w-rook" : "b-rook", side: side),
+                
+                Knight(image: isSideWhite == true ? "w-knight" : "b-knight", side: side),
+                
+                Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
+                
+                Queen(image: isSideWhite == true ? "w-king" : "b-king", side: side),
+                
+                King(image: isSideWhite == true ? "w-king" : "b-king", side: side),
+                
+                Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
+                
+                Knight(image: isSideWhite == true ? "w-knight" : "b-knight", side: side),
+                
+                Rook(image: isSideWhite == true ? "w-rook" : "b-rook", side: side)
+                
+            ]
+        } else {
             
-            Rook(image: isSideWhite == true ? "w-rook" : "b-rook", side: side),
-            Rook(image: isSideWhite == true ? "w-rook" : "b-rook", side: side),
-            
-            Knight(image: isSideWhite == true ? "w-knight" : "b-knight", side: side),
-            Knight(image: isSideWhite == true ? "w-knight" : "b-knight", side: side),
-            
-            Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
-            Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
-            
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
-            Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side)
-        ]
+            return [
+                
+                Rook(image: isSideWhite == true ? "w-rook" : "b-rook", side: side),
+                
+                Knight(image: isSideWhite == true ? "w-knight" : "b-knight", side: side),
+                
+                Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
+                
+                Queen(image: isSideWhite == true ? "w-king" : "b-king", side: side),
+                
+                King(image: isSideWhite == true ? "w-king" : "b-king", side: side),
+                
+                Bishop(image: isSideWhite == true ? "w-bishop" : "b-bishop", side: side),
+                
+                Knight(image: isSideWhite == true ? "w-knight" : "b-knight", side: side),
+                
+                Rook(image: isSideWhite == true ? "w-rook" : "b-rook", side: side),
+                
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+                Pawn(image: isSideWhite == true ? "w-pawn" : "b-pawn", side: side),
+            ]
+        }
+        
     }
 }

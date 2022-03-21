@@ -9,15 +9,17 @@ import SwiftUI
 
 struct PiecesView: View {
     
+    
+    
     let columns = [
-        GridItem(.fixed(50)),
-        GridItem(.fixed(50)),
-        GridItem(.fixed(50)),
-        GridItem(.fixed(50)),
-        GridItem(.fixed(50)),
-        GridItem(.fixed(50)),
-        GridItem(.fixed(50)),
-        GridItem(.fixed(50))
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085)),
+        GridItem(.fixed(UIScreen.main.bounds.width*0.085))
     ]
     
     var whitePieces = Game.getPieces(side: .white)
@@ -25,13 +27,33 @@ struct PiecesView: View {
     
     var body: some View {
         
-        LazyVGrid(columns: self.columns) {
-            ForEach(self.whitePieces) { piece in
-                PieceView(piece: piece)
+        VStack {
+            
+            Spacer(minLength: UIScreen.main.bounds.height*0.2)
+            
+            
+            LazyVGrid(columns: self.columns) {
+                ForEach(self.blackPieces) { piece in
+                    PieceView(piece: piece)
+                }
             }
+            
+            //Spacer(minLength: UIScreen.main.bounds.height*0.05)
+            
+            Text("")
+                .frame(width: UIScreen.main.bounds.height*0.18, height: UIScreen.main.bounds.height*0.19, alignment: .center)
+                .hidden()
+            
+            
+            
+            LazyVGrid(columns: self.columns) {
+                ForEach(self.whitePieces) { piece in
+                    PieceView(piece: piece)
+                }
+            }
+            
+            Spacer(minLength: UIScreen.main.bounds.height*0.2)
         }
-        
-        Text("Hello, World!")
     }
 }
 
